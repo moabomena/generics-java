@@ -13,15 +13,16 @@ public class Program {
 		PrintService ps = new PrintService();
 
 		System.out.print("How many values?  ");
-		int N = sc.nextInt();
+		Integer N = sc.nextInt();
 
 		for (int i =  0; i < N; i++) {
 			int value = sc.nextInt();
 			ps.addValue(value);
 		}
 		ps.print();
-	
-		System.out.println("First: " + ps.first());
+		
+		Integer x = (Integer) ps.first();
+		System.out.println("First: " + x);
 
 		sc.close();
 
